@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 function startSlider() {
-	count = $("#slider > img").size();//jquery function that counts all the elements
+	count = $("#slider > img").length//jquery function that counts all the elements
 
  loop = setInterval(function() {
 
@@ -29,12 +29,12 @@ function startSlider() {
 
 function prev() {
 	newSlide = sliderInt - 1;
-	showSlide(newslide);
+	showSlide(newSlide);
 }
 
 function next() {
-	newSlide = siderInt + 1;
-	showslide(newSlide);
+	newSlide = sliderInt + 1;
+	showSlide(newSlide);
 }
 
 function stopLoop() {
